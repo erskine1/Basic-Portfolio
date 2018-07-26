@@ -4,7 +4,8 @@ body {
   background-image: url("../images/white_carbon.png");
 }
 
-.navbar {
+/* formerly .navbar */
+nav {
   background: #fff;
   margin-bottom: 50px;
   border-bottom: 2px solid #cccccc;
