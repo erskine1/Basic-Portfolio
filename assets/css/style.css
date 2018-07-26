@@ -1,0 +1,56 @@
+
+
+body {
+  background-image: url("../images/white_carbon.png");
+  /* width: 960px; */
+}
+
+.navbar {
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.navLinks {
+  overflow: auto;
+  widtH: 960px;
+  /* Needed this for float to take buttons to end of container */
+  margin: 0 auto;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 35px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #777777;
+}
+
+/* won't float left. should this even be in the list? */
+li h1 {
+  color: #fff;
+  font-size: 32px;
+  background: #4aaaa5;
+  display: block;
+  /* There should be a better way to make this fit */
+  padding: 27px 16px;
+  text-align: center;
+}
+
+li a:hover {
+  background: #111;
+}
+
+.aboutWrapper {
+  width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.myPhoto {
+  float: left;
+}
