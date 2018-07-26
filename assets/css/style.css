@@ -47,6 +47,10 @@ li a:hover {
   color: #ffffff;
 }
 
+li a:active {
+  background: #666666;
+}
+
 .aboutWrapper {
   width: 960px;
   background: #fff;
