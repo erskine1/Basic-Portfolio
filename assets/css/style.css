@@ -1,20 +1,23 @@
 
+html, body {
+  position: relative;
+  height: 100%;
+}
 
 body {
   background-image: url("../images/white_carbon.png");
 }
 
-/* formerly .navbar */
+/* navbar elements */
+
 nav {
   background: #fff;
-  margin-bottom: 40px;
   border-bottom: 2px solid #cccccc;
 }
 
 .navLinks {
   overflow: auto;
   width: 960px;
-  /* Needed this for float to take buttons to end of container */
   margin: 0 auto;
 }
 
@@ -25,16 +28,15 @@ li a {
   text-align: center;
   text-decoration: none;
   color: #777777;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-/* formerly li h1 */
 header {
   float: left;
   position: relative;
   color: #ffffff;
   font-size: 32px;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
   background: #4aaaa5;
   /* There should be a better way to make this fit */
   padding: 27px 16px;
@@ -51,24 +53,25 @@ li a:active {
   background: #666666;
 }
 
+/* main page elements */ 
+
 .wrapper {
-  width: 920px;
-  background: #fff;
-  padding: 20px;
   margin: 0 auto;
-  overflow: auto;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  /* Check this width later */
+  max-width: 960px;
+  padding-bottom: 50px;
 }
 
-.portfolio {
-  width: 900px;
+.container {
+  background: #fff;
+  padding: 20px;
 }
 
 h1 {
   font-size: 34px;
-  /* line-height:  */
   border-bottom: 3px solid #cccccc;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
   color: #4aaaa5;
   margin-bottom: 20px;
   padding: 20px 0;
@@ -88,36 +91,53 @@ p {
   margin-right: 20px;
 }
 
-/* breaking this by removing float left in order to
-address issue with footer */
+/* portfolio page */ 
+
 .project1, .project2, .project3, .project4 {
-  /* float: left; */
-  margin-right: 10px;
-  margin-bottom: 10px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.project2, project4 {
-  clear: right;
+/* contact page */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  background: #4aaaa5;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: #666666;
 }
 
 footer {
-  position: absolute;
-  /* bottom: 0; */
-  height: 30px;
+  position: fixed;
+  /* position: absolute; */
+  /* height: 50px; */
+  padding: 40px 0 5px 0;
   width: 100%;
-  padding-top: 40px;
+  bottom: 0;
+  margin-top: 40px;
   background: #666666;
   border-top: 8px solid #4aaaa5;
   text-align: center;
   color: #ffffff;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
-
-/* .footer {
-  padding-top: 40px;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
-  text-align: center;
-  color: #ffffff;
-  font-size: 12px;
-} */
