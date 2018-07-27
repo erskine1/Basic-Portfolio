@@ -66,6 +66,7 @@ li a:active {
 .container {
   background: #fff;
   padding: 20px;
+  overflow: auto;
 }
 
 h1 {
@@ -93,10 +94,23 @@ p {
 
 /* portfolio page */ 
 
-.project1, .project2, .project3, .project4 {
+.project {
   float: left;
+  position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.label {
+  /* float: left; */
+  position: absolute;
+  width: 300px;
+  bottom: 15px;
+  color: #ffffff;
+  padding: 20px 0;
+  background: #4aaaa5;
+  font-size: 24px;
+  text-align: center;
 }
 
 /* contact page */
